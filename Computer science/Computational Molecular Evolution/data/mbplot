@@ -1,0 +1,53 @@
+#! /usr/bin/perl
+#
+# Script that plots ".p" file output by MrBayes (v3.0B4). Default is to plot 
+# lnL in order to figure out how large the "burnin" is. 
+# If one parameter is given, it is assumed to be the column to plot
+# If two extra parameters are given , they are assumed to be from-to plotrange.
+# If THREE parameters are given, they are assumed to be column no. 
+# followed by from-to.
+#
+# Anders Gorm Pedersen, gorm@cbs.dtu.dk, 2003
+
+
+# Ugly commandline parsing
+if($#ARGV>3 || $#ARGV<0) {
+	print "Usage: mbplot.pl <parameterfile> [from to | column | column from to]\n";
+	exit;
+} 
+
+$range="";
+$column=2;
+
+# Otherwise assume everything is just fine...
+$parameterfile=$ARGV[0];
+if ($#ARGV==1) {
+	$column = $ARGV[1];
+} 
+
+if ($#ARGV==2) {
+	$from = $ARGV[1];
+	$to = $ARGV[2];
+	$range = sprintf("[%d:%d]",$from,$to);
+} 
+
+if ($#ARGV==3) {
+	$column = $ARGV[1];
+	$from = $ARGV[2];
+	$to = $ARGV[3];
+	$range = sprintf("[%d:%d]",$from,$to);
+}
+
+# Print column heading so user knows that she is doing the right thing...
+printf "Plotting column ";
+$command = sprintf("head -2 %s | tail -1 | gawk  \'{print \$%d}\'",$parameterfile, $column);
+system($command);
+printf "Press ENTER to exit\n";
+
+# Plot 
+system ("cat $parameterfile | grep -v 'ID:'| sed \'s/^Gen/#Gen/\' > tempmb.data");
+$command = sprintf("plot %s\'tempmb.data\' u %s:%s w li\n",$range,1,$column);
+system ("echo \"$command\" > tempmb.gnu");
+system ("echo \"pause -1\" >> tempmb.gnu");
+system ("gnuplot tempmb.gnu");
+system("rm tempmb.gnu tempmb.data");

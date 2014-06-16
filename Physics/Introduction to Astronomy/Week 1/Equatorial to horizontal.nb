@@ -1,0 +1,359 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11515,        350]
+NotebookOptionsPosition[     10521,        310]
+NotebookOutlinePosition[     10857,        325]
+CellTagsIndexPosition[     10814,        322]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[StyleBox["Converting equatorial coordinates to horizontal", \
+"Subtitle",
+ FontColor->GrayLevel[0]]], "Title",
+ CellChangeTimes->{{3.563968195607041*^9, 3.563968220466897*^9}}],
+
+Cell["Initialization of variables", "Subsubtitle",
+ CellChangeTimes->{{3.563970236937224*^9, 3.56397025370005*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"currentTime", "=", 
+   RowBox[{"DateList", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"j2000epoch", "=", 
+   RowBox[{"DateList", "[", 
+    RowBox[{"{", 
+     RowBox[{"2000", ",", "1", ",", "1", ",", "12", ",", "0", ",", "0"}], 
+     "}"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.563972324409357*^9, 3.563972326135612*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+Set up observer coordinates\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.563972340587938*^9, 3.563972353013272*^9}, 
+   3.56397318551744*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"timeZone", "=", "6"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"longitude", "=", "71.4167"}], ";"}], " ", 
+  RowBox[{"(*", "Astana", "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"latitude", " ", "=", " ", "51.1667"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.563966249663966*^9, 3.563966278343936*^9}, 
+   3.563966354434426*^9, {3.563966528193177*^9, 3.563966576370271*^9}, {
+   3.56396664366268*^9, 3.563966706928148*^9}, {3.563966803959787*^9, 
+   3.563966843016626*^9}, {3.563966942511172*^9, 3.563966960438743*^9}, {
+   3.563967038519502*^9, 3.563967117001034*^9}, {3.563967170683679*^9, 
+   3.56396728051563*^9}, {3.563967325756738*^9, 3.563967377988314*^9}, {
+   3.563967432927623*^9, 3.563967483653838*^9}, {3.563967609266808*^9, 
+   3.563967619159682*^9}, {3.563967659355541*^9, 3.563967678098354*^9}, {
+   3.563967842710358*^9, 3.563967844886721*^9}, {3.563967937125872*^9, 
+   3.563967945123129*^9}, {3.563967993853661*^9, 3.563968008142256*^9}, {
+   3.563968269202862*^9, 3.56396827558963*^9}, {3.563968334353844*^9, 
+   3.563968338915*^9}, {3.56396883192983*^9, 3.563968954966678*^9}, {
+   3.563969907738776*^9, 3.563969917480563*^9}, {3.563970164771928*^9, 
+   3.56397016783698*^9}, {3.563971219348301*^9, 3.563971248554584*^9}, {
+   3.563972315268129*^9, 3.563972332444645*^9}, {3.56397291566675*^9, 
+   3.563972931356787*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+Set up equatorial coordinates of celestial body\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.563970417111529*^9, 3.563970466909723*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DEC", "=", 
+   RowBox[{"FromDMS", "[", "\"\<-63\[Degree]05'56.73\\\"\>\"", "]"}]}], ";", 
+  " ", 
+  RowBox[{"(*", "\:0410\:043a\:0440\:0443\:043a\:0441", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"RAhms", "=", 
+   RowBox[{"{", 
+    RowBox[{"12", ",", "26", ",", "35.8958"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"RA", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"RAhms", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "+", 
+      RowBox[{
+       RowBox[{"RAhms", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "/", "60"}], "+", 
+      RowBox[{
+       RowBox[{"RAhms", "[", 
+        RowBox[{"[", "3", "]"}], "]"}], "/", "3600"}]}], ")"}], "*", "15"}]}],
+   ";"}]}], "Input",
+ CellChangeTimes->{
+  3.563970458121817*^9, {3.563970490337936*^9, 3.56397052201575*^9}, {
+   3.563970591295661*^9, 3.563970658036064*^9}, {3.563970853626536*^9, 
+   3.563970953957492*^9}, {3.56397105655719*^9, 3.563971062841628*^9}, {
+   3.5639728072871*^9, 3.563972847197356*^9}, {3.5639729371239*^9, 
+   3.563972952372137*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+Calculating local mean sidereal time\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.563970256190285*^9, 3.563970335132819*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"currentUniversalTime", "=", 
+   RowBox[{"DatePlus", "[", " ", 
+    RowBox[{"currentTime", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "timeZone"}], ",", "\"\<Hour\>\""}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"d", " ", "=", " ", 
+   RowBox[{"DateDifference", "[", 
+    RowBox[{"j2000epoch", ",", "currentUniversalTime", ",", "\"\<Day\>\""}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"GMST", "=", 
+   RowBox[{"Mod", "[", 
+    RowBox[{
+     RowBox[{"280.46061837", "+", 
+      RowBox[{"360.98564736629", "*", 
+       RowBox[{"First", "[", "d", "]"}]}]}], ",", "360"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"GMSTlist", " ", "=", " ", 
+  RowBox[{"DMSList", "[", "GMST", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LMST", "=", 
+   RowBox[{"Mod", "[", 
+    RowBox[{
+     RowBox[{"GMST", "+", "longitude"}], ",", "360"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LMSTtime", "=", 
+   RowBox[{"LMST", "/", "15"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LMSThours", "=", 
+   RowBox[{"Quotient", "[", 
+    RowBox[{"LMSTtime", ",", "1"}], "]"}]}], ";", 
+  RowBox[{"LMSTremainder", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"LMSTtime", "-", "LMSThours"}], ")"}], "*", "60"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LMSTminutes", "=", 
+   RowBox[{"Quotient", "[", 
+    RowBox[{"LMSTremainder", ",", "1"}], "]"}]}], ";", 
+  RowBox[{"LMSTremainder", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"LMSTremainder", "-", "LMSTminutes"}], ")"}], "*", "60"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LMSTseconds", "=", 
+   RowBox[{"Quotient", "[", 
+    RowBox[{"LMSTremainder", ",", "1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"LMSThms", "=", 
+  RowBox[{"{", 
+   RowBox[{"LMSThours", ",", "LMSTminutes", ",", "LMSTseconds"}], 
+   "}"}]}]}], "Input",
+ CellChangeTimes->{
+  3.5639689597362*^9, {3.563969143570831*^9, 3.563969166878274*^9}, {
+   3.563969370880325*^9, 3.563969378492758*^9}, {3.56396942695551*^9, 
+   3.563969626271931*^9}, {3.563969684793313*^9, 3.563969713127894*^9}, {
+   3.56396974591027*^9, 3.563969752554436*^9}, {3.563969933523449*^9, 
+   3.563970030860698*^9}, {3.563970071216528*^9, 3.563970102729451*^9}, {
+   3.563972382399525*^9, 3.563972384952813*^9}, {3.563972980567155*^9, 
+   3.563973003568921*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"325", ",", "21", ",", "17.56058033555746`"}], "}"}]], "Output",
+ CellChangeTimes->{3.563973006306233*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "27", ",", "5"}], "}"}]], "Output",
+ CellChangeTimes->{3.563973006307493*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+Calculating horizontal coordinates\
+\>", "Subsubtitle",
+ CellChangeTimes->{{3.56397102279088*^9, 3.563971049457021*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"HA", "=", 
+   RowBox[{"LMST", "\[Minus]", "RA"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sinALT", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"DEC", "*", "Degree"}], "]"}], "*", " ", 
+     RowBox[{"Sin", "[", 
+      RowBox[{"latitude", "*", "Degree"}], "]"}]}], "+", 
+    RowBox[{
+     RowBox[{"Cos", "[", 
+      RowBox[{"DEC", "*", "Degree"}], "]"}], " ", "*", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"latitude", "*", "Degree"}], "]"}], "*", " ", 
+     RowBox[{"Cos", "[", 
+      RowBox[{"HA", "*", "Degree"}], "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ALT", "=", 
+   RowBox[{
+    RowBox[{"ArcSin", "[", "sinALT", "]"}], "/", "Degree"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cosA", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{"DEC", "*", "Degree"}], "]"}], "-", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{"ALT", "*", "Degree"}], "]"}], "*", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"latitude", "*", "Degree"}], "]"}]}]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"ALT", "*", "Degree"}], "]"}], "*", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"latitude", "*", "Degree"}], "]"}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"A", "=", 
+   RowBox[{
+    RowBox[{"ArcCos", "[", "cosA", "]"}], "/", "Degree"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AZ", "=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{"HA", "*", "Degree"}], "]"}], " ", "<", " ", "0"}], ",", "A", 
+     ",", 
+     RowBox[{"360", "-", "A"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"{", 
+  RowBox[{"ALT", ",", "AZ"}], "}"}]}], "Input",
+ CellChangeTimes->{
+  3.563971048128401*^9, {3.563971080035465*^9, 3.563971080333033*^9}, {
+   3.563971156287738*^9, 3.563971204357394*^9}, {3.563971255343354*^9, 
+   3.563971309564094*^9}, {3.563971344667741*^9, 3.563971358138182*^9}, {
+   3.563971505301435*^9, 3.563971547183264*^9}, {3.5639715857225*^9, 
+   3.563971717384196*^9}, {3.5639717482804*^9, 3.563971829330427*^9}, {
+   3.563971964463518*^9, 3.563971990484532*^9}, {3.563972246828818*^9, 
+   3.56397225940957*^9}, {3.56397257401397*^9, 3.563972658783213*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "70.14039553123504`"}], ",", "137.70649847981403`"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.563971089029547*^9, 3.563971204751329*^9, 3.563971257383032*^9, {
+   3.563971310311304*^9, 3.563971321282941*^9}, 3.563971358590841*^9, {
+   3.563971508071331*^9, 3.563971510415848*^9}, {3.563971588330678*^9, 
+   3.563971631423778*^9}, {3.563971695662433*^9, 3.563971720176037*^9}, 
+   3.563971830488595*^9, {3.563971971917632*^9, 3.56397199432229*^9}, 
+   3.563972047822684*^9, {3.563972191473647*^9, 3.563972218607401*^9}, {
+   3.563972253972599*^9, 3.563972269501503*^9}, {3.563972362453548*^9, 
+   3.56397242123588*^9}, 3.563972463891296*^9, {3.563972574684634*^9, 
+   3.563972579021391*^9}, {3.56397261078211*^9, 3.563972682095606*^9}, {
+   3.563972907850086*^9, 3.563972922814516*^9}, {3.563972957367235*^9, 
+   3.563973006466135*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1613, 997},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Linux x86 (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 190, 3, 69, "Title"],
+Cell[772, 27, 115, 1, 31, "Subsubtitle"],
+Cell[890, 30, 390, 10, 55, "Input"],
+Cell[CellGroupData[{
+Cell[1305, 44, 150, 5, 53, "Subsubtitle"],
+Cell[1458, 51, 1374, 24, 77, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2869, 80, 145, 4, 53, "Subsubtitle"],
+Cell[3017, 86, 1086, 30, 77, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4140, 121, 134, 4, 53, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[4299, 129, 2440, 67, 231, "Input"],
+Cell[6742, 198, 145, 3, 32, "Output"],
+Cell[6890, 203, 126, 3, 32, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7065, 212, 131, 4, 53, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[7221, 220, 2361, 67, 165, "Input"],
+Cell[9585, 289, 896, 16, 32, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

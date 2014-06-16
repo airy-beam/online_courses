@@ -1,0 +1,13 @@
+#NEXUS 
+
+[!Imported NBRF/PIR file "simple.pir" (Tue Mar  2 16:11:28 2004)]
+Begin data;
+    Dimensions ntax=4 nchar=15;
+    Format datatype=dna gap=-;
+    Matrix
+A  TCCGAGTCGATCAGC
+B  AAGTACCCGTTGATC
+C  AAGTTGCCGTTCAGG
+D  ACCGAGTCGATCTGC
+    ;
+End;

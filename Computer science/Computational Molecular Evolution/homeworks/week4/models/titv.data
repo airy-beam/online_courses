@@ -1,0 +1,5 @@
+#Organisms		Divergence_time(MY)	p_dist	Transitions(P)	Transversions(Q)	JC	K2P
+Human:Chimpanzee 	6.1	
+Human:Gorilla 		8.0	
+Human:Orangutan 	15.1	
+Human:Gibbon 		19.4	

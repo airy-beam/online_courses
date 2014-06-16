@@ -1,0 +1,16 @@
+from vec import Vec
+from vec import scalar_mul
+from GF2 import one
+v1 = Vec([0, 1, 2, 3, 4],{0:one, 1:one, 3:one, 4:one})
+v2 = Vec([0, 1, 2, 3, 4],{2: one})
+v3 = Vec([0, 1, 2, 3, 4],{2:one, 3:one, 4:one})
+v4 = Vec([0, 1, 2, 3, 4],{0: one, 2:one, 3:one, 4:one})
+v5 = Vec([0, 1, 2, 3, 4],{0: one, 1:one, 2:one, 3:one, 4:one})
+
+for x1 in (0, one):
+    for x2 in (0, one):
+        for x3 in (0, one):
+            for x4 in (0, one):
+                for x5 in (0, one):
+                    if (scalar_mul(v1,x1)+scalar_mul(v2,x2)+scalar_mul(v3,x3)+scalar_mul(v4,x4)+scalar_mul(v5,x5)) == Vec([0, 1, 2, 3, 4],{}):
+                        print(x1, ", ", x2, ", ", x3, ", ", x4)

@@ -1,0 +1,2181 @@
+
+P A U P *
+Version 4.0a128 for Unix/Linux
+Tue Jul 30 19:25:53 2013
+
+      -----------------------------NOTICE-----------------------------
+        This is an alpha-test version prepared for the exclusive
+        use of course and workshop participants, as well as other
+        authorized testers.  It will expire on 31 Dec 2013.
+
+        Please report bugs to david.swofford@duke.edu
+      ----------------------------------------------------------------
+
+
+Neighbor-joining search settings:
+  Ties (if encountered) will be broken randomly; initial seed = 0
+  Distance measure = Jukes-Cantor
+  (Tree is unrooted)
+
+Tree found by neighbor-joining method stored in tree buffer
+Note: Ties were encountered; neighbor-joining tree may not be unique
+Time used for tree calculation = 0.00 sec (CPU time = 0.00 sec)
+
+***** BEGIN TESTING 56 MODELS OF EVOLUTION *****
+
+Optimality criterion set to likelihood.
+
+** Model 1 of 56 * Calculating JC **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the JC69 model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3837.854
+
+Time used to compute likelihoods = 0.04 sec (CPU time = 0.02 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 2 of 56 * Calculating JC+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the JC69+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3746.327
+  Estimated value of proportion of invariable sites = 0.415280
+
+Time used to compute likelihoods = 0.16 sec (CPU time = 0.10 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 3 of 56 * Calculating JC+GÊ**
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the JC69+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3729.808
+  Estimated value of gamma shape parameter = 0.620776
+
+Time used to compute likelihoods = 0.52 sec (CPU time = 0.45 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 4 of 56 * Calculating JC+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the JC69+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3729.470
+  Estimated value of proportion of invariable sites = 0.174449
+  Estimated value of gamma shape parameter = 1.009199
+
+Time used to compute likelihoods = 3.16 sec (CPU time = 2.72 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 5 of 56 * Calculating F81 **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    State frequencies estimated via ML
+    These settings correspond to the F81 model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3782.818
+  Estimated base frequencies = A:0.391728 C:0.170613 G:0.237982 T:0.199677
+
+Time used to compute likelihoods = 0.56 sec (CPU time = 0.51 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 6 of 56 * Calculating F81+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    State frequencies estimated via ML
+    These settings correspond to the F81+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3681.102
+  Estimated base frequencies = A:0.410656 C:0.167894 G:0.233620 T:0.187830
+  Estimated value of proportion of invariable sites = 0.420603
+
+Time used to compute likelihoods = 1.69 sec (CPU time = 0.86 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 7 of 56 * Calculating F81+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    State frequencies estimated via ML
+    These settings correspond to the F81+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3663.089
+  Estimated base frequencies = A:0.417142 C:0.166459 G:0.233794 T:0.182605
+  Estimated value of gamma shape parameter = 0.575685
+
+Time used to compute likelihoods = 1.70 sec (CPU time = 1.52 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 8 of 56 * Calculating F81+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 1
+    State frequencies estimated via ML
+    These settings correspond to the F81+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3662.521
+  Estimated base frequencies = A:0.417874 C:0.166113 G:0.233347 T:0.182666
+  Estimated value of proportion of invariable sites = 0.204651
+  Estimated value of gamma shape parameter = 1.025978
+
+Time used to compute likelihoods = 3.19 sec (CPU time = 2.97 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 9 of 56 * Calculating K80 **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2
+    Transition/transversion ratio estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the K80 (=K2P) model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3731.634
+  Estimated ti/tv ratio = 1.756812 (kappa = 3.513623)
+
+Time used to compute likelihoods = 0.18 sec (CPU time = 0.10 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 10 of 56 * Calculating K80+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2
+    Transition/transversion ratio estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the K80 (=K2P)+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3638.197
+  Estimated ti/tv ratio = 1.824499 (kappa = 3.648997)
+  Estimated value of proportion of invariable sites = 0.417110
+
+Time used to compute likelihoods = 1.03 sec (CPU time = 0.86 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 11 of 56 * Calculating K80+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2
+    Transition/transversion ratio estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the K80 (=K2P)+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3620.452
+  Estimated ti/tv ratio = 1.863241 (kappa = 3.726481)
+  Estimated value of gamma shape parameter = 0.602821
+
+Time used to compute likelihoods = 1.68 sec (CPU time = 1.49 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 12 of 56 * Calculating K80+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2
+    Transition/transversion ratio estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the K80 (=K2P)+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3620.051
+  Estimated ti/tv ratio = 1.864815 (kappa = 3.729630)
+  Estimated value of proportion of invariable sites = 0.175585
+  Estimated value of gamma shape parameter = 0.975288
+
+Time used to compute likelihoods = 1.72 sec (CPU time = 1.52 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 13 of 56 * Calculating HKY **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2 (HKY85 variant)
+    Transition/transversion ratio estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the HKY85 model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3678.592
+  Estimated base frequencies = A:0.394258 C:0.175487 G:0.208187 T:0.222069
+  Estimated ti/tv ratio = 1.794362 (kappa = 3.550278)
+
+Time used to compute likelihoods = 0.80 sec (CPU time = 0.61 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 14 of 56 * Calculating HKY+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2 (HKY85 variant)
+    Transition/transversion ratio estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the HKY85+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3579.540
+  Estimated base frequencies = A:0.409768 C:0.181798 G:0.195330 T:0.213103
+  Estimated ti/tv ratio = 1.831785 (kappa = 3.685014)
+  Estimated value of proportion of invariable sites = 0.415081
+
+Time used to compute likelihoods = 1.43 sec (CPU time = 0.91 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 15 of 56 * Calculating HKY+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2 (HKY85 variant)
+    Transition/transversion ratio estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the HKY85+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3561.884
+  Estimated base frequencies = A:0.419002 C:0.183959 G:0.190634 T:0.206406
+  Estimated ti/tv ratio = 1.894709 (kappa = 3.826207)
+  Estimated value of gamma shape parameter = 0.581739
+
+Time used to compute likelihoods = 2.33 sec (CPU time = 2.15 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 16 of 56 * Calculating HKY+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 2 (HKY85 variant)
+    Transition/transversion ratio estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the HKY85+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3560.787
+  Estimated base frequencies = A:0.420507 C:0.183394 G:0.189575 T:0.206524
+  Estimated ti/tv ratio = 1.900910 (kappa = 3.845401)
+  Estimated value of proportion of invariable sites = 0.229928
+  Estimated value of gamma shape parameter = 1.138215
+
+Time used to compute likelihoods = 3.22 sec (CPU time = 2.67 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 17 of 56 * Calculating TrNef **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3722.323
+  Estimated R-matrix:
+    -             1     4.1419234             1
+                 1-             1     2.5256935
+         4.1419234             1-             1
+                 1     2.5256935             1-
+
+Time used to compute likelihoods = 0.76 sec (CPU time = 0.50 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 18 of 56 * Calculating TrNef+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3634.313
+  Estimated R-matrix:
+    -             1     4.0907807             1
+                 1-             1     2.8440307
+         4.0907807             1-             1
+                 1     2.8440307             1-
+  Estimated value of proportion of invariable sites = 0.410282
+
+Time used to compute likelihoods = 1.06 sec (CPU time = 0.61 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 19 of 56 * Calculating TrNef+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3615.466
+  Estimated R-matrix:
+    -             1     4.3291659             1
+                 1-             1     2.7382077
+         4.3291659             1-             1
+                 1     2.7382077             1-
+  Estimated value of gamma shape parameter = 0.621395
+
+Time used to compute likelihoods = 2.94 sec (CPU time = 2.22 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 20 of 56 * Calculating TrNef+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3615.038
+  Estimated R-matrix:
+    -             1     4.3364662             1
+                 1-             1     2.7360415
+         4.3364662             1-             1
+                 1     2.7360415             1-
+  Estimated value of proportion of invariable sites = 0.163121
+  Estimated value of gamma shape parameter = 0.965531
+
+Time used to compute likelihoods = 2.15 sec (CPU time = 1.70 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 21 of 56 * Calculating TrN **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR model (this is the TN93 model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3677.050
+  Estimated base frequencies = A:0.384717 C:0.185029 G:0.200008 T:0.230246
+  Estimated R-matrix:
+    -             1     3.8934996             1
+                 1-             1     3.0351485
+         3.8934996             1-             1
+                 1     3.0351485             1-
+
+Time used to compute likelihoods = 1.11 sec (CPU time = 0.91 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 22 of 56 * Calculating TrN+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+I model (this is the TN93+I model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3579.441
+  Estimated base frequencies = A:0.407304 C:0.183992 G:0.193184 T:0.215519
+  Estimated R-matrix:
+    -             1     3.7916629             1
+                 1-             1     3.5308995
+         3.7916629             1-             1
+                 1     3.5308995             1-
+  Estimated value of proportion of invariable sites = 0.414143
+
+Time used to compute likelihoods = 1.01 sec (CPU time = 0.97 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 23 of 56 * Calculating TrN+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G model (this is the TN93+G model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3561.639
+  Estimated base frequencies = A:0.415066 C:0.187647 G:0.186600 T:0.210687
+  Estimated R-matrix:
+    -             1     4.0549123             1
+                 1-             1     3.5479999
+         4.0549123             1-             1
+                 1     3.5479999             1-
+  Estimated value of gamma shape parameter = 0.585490
+
+Time used to compute likelihoods = 3.52 sec (CPU time = 3.26 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 24 of 56 * Calculating TrN+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b a
+     C a - a e
+     G b a - a
+     T a e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G+I model (this is the TN93+G+I
+      model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3560.503
+  Estimated base frequencies = A:0.416145 C:0.187415 G:0.185266 T:0.211175
+  Estimated R-matrix:
+    -             1     4.0968739             1
+                 1-             1     3.5472784
+         4.0968739             1-             1
+                 1     3.5472784             1-
+  Estimated value of proportion of invariable sites = 0.229507
+  Estimated value of gamma shape parameter = 1.146916
+
+Time used to compute likelihoods = 6.58 sec (CPU time = 6.33 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 25 of 56 * Calculating K3P **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM model (this is the K81=K3ST model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3725.695
+  Estimated R-matrix:
+    -             1     2.7935408    0.58904696
+                 1-    0.58904696     2.7935408
+         2.7935408    0.58904696-             1
+        0.58904696     2.7935408             1-
+
+Time used to compute likelihoods = 0.48 sec (CPU time = 0.44 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 26 of 56 * Calculating K3P+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+I model (this is the K81=K3ST+I
+      model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3631.934
+  Estimated R-matrix:
+    -             1     2.8470413    0.55963126
+                 1-    0.55963126     2.8470413
+         2.8470413    0.55963126-             1
+        0.55963126     2.8470413             1-
+  Estimated value of proportion of invariable sites = 0.417379
+
+Time used to compute likelihoods = 0.68 sec (CPU time = 0.58 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 27 of 56 * Calculating K3P+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G model (this is the K81=K3ST+G
+      model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3614.229
+  Estimated R-matrix:
+    -             1     2.8915734    0.55109196
+                 1-    0.55109196     2.8915734
+         2.8915734    0.55109196-             1
+        0.55109196     2.8915734             1-
+  Estimated value of gamma shape parameter = 0.601615
+
+Time used to compute likelihoods = 2.78 sec (CPU time = 2.52 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 28 of 56 * Calculating K3P+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G+I model (this is the K81=K3ST+G+I
+      model)
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3613.820
+  Estimated R-matrix:
+    -             1     2.8921808    0.55071668
+                 1-    0.55071668     2.8921808
+         2.8921808    0.55071668-             1
+        0.55071668     2.8921808             1-
+  Estimated value of proportion of invariable sites = 0.175698
+  Estimated value of gamma shape parameter = 0.972989
+
+Time used to compute likelihoods = 4.00 sec (CPU time = 3.74 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 29 of 56 * Calculating K3Puf **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3668.094
+  Estimated base frequencies = A:0.399113 C:0.169273 G:0.204099 T:0.227516
+  Estimated R-matrix:
+    -             1     2.6032294    0.48949867
+                 1-    0.48949867     2.6032294
+         2.6032294    0.48949867-             1
+        0.48949867     2.6032294             1-
+
+Time used to compute likelihoods = 1.05 sec (CPU time = 0.99 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 30 of 56 * Calculating K3Puf+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3569.654
+  Estimated base frequencies = A:0.412754 C:0.173004 G:0.192650 T:0.221591
+  Estimated R-matrix:
+    -             1     2.6881156    0.47281227
+                 1-    0.47281227     2.6881156
+         2.6881156    0.47281227-             1
+        0.47281227     2.6881156             1-
+  Estimated value of proportion of invariable sites = 0.411876
+
+Time used to compute likelihoods = 0.81 sec (CPU time = 0.73 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 31 of 56 * Calculating K3Puf+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3553.004
+  Estimated base frequencies = A:0.421403 C:0.174003 G:0.188308 T:0.216286
+  Estimated R-matrix:
+    -             1     2.7997954    0.47541701
+                 1-    0.47541701     2.7997954
+         2.7997954    0.47541701-             1
+        0.47541701     2.7997954             1-
+  Estimated value of gamma shape parameter = 0.592154
+
+Time used to compute likelihoods = 2.22 sec (CPU time = 2.02 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 32 of 56 * Calculating K3Puf+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 3 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c b
+     G b c - a
+     T c b a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3551.730
+  Estimated base frequencies = A:0.423099 C:0.173085 G:0.187012 T:0.216805
+  Estimated R-matrix:
+    -             1     2.8032449    0.47000788
+                 1-    0.47000788     2.8032449
+         2.8032449    0.47000788-             1
+        0.47000788     2.8032449             1-
+  Estimated value of proportion of invariable sites = 0.239516
+  Estimated value of gamma shape parameter = 1.218735
+
+Time used to compute likelihoods = 5.44 sec (CPU time = 5.17 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 33 of 56 * Calculating TIMef **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3716.394
+  Estimated R-matrix:
+    -             1     3.2966944    0.59112508
+                 1-    0.59112508     2.0117199
+         3.2966944    0.59112508-             1
+        0.59112508     2.0117199             1-
+
+Time used to compute likelihoods = 0.50 sec (CPU time = 0.46 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 34 of 56 * Calculating TIMef+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3628.090
+  Estimated R-matrix:
+    -             1     3.1985988    0.56349081
+                 1-    0.56349081     2.2296208
+         3.1985988    0.56349081-             1
+        0.56349081     2.2296208             1-
+  Estimated value of proportion of invariable sites = 0.410708
+
+Time used to compute likelihoods = 0.66 sec (CPU time = 0.57 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 35 of 56 * Calculating TIMef+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3609.311
+  Estimated R-matrix:
+    -             1     3.3686953    0.55677712
+                 1-    0.55677712     2.1373272
+         3.3686953    0.55677712-             1
+        0.55677712     2.1373272             1-
+  Estimated value of gamma shape parameter = 0.620216
+
+Time used to compute likelihoods = 2.36 sec (CPU time = 2.13 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 36 of 56 * Calculating TIMef+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3608.875
+  Estimated R-matrix:
+    -             1     3.3709387    0.55584386
+                 1-    0.55584386     2.1341226
+         3.3709387    0.55584386-             1
+        0.55584386     2.1341226             1-
+  Estimated value of proportion of invariable sites = 0.163906
+  Estimated value of gamma shape parameter = 0.965629
+
+Time used to compute likelihoods = 2.31 sec (CPU time = 2.11 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 37 of 56 * Calculating TIM **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3666.638
+  Estimated base frequencies = A:0.389576 C:0.177942 G:0.196542 T:0.235940
+  Estimated R-matrix:
+    -             1     2.8515027    0.49177458
+                 1-    0.49177458     2.2422165
+         2.8515027    0.49177458-             1
+        0.49177458     2.2422165             1-
+
+Time used to compute likelihoods = 1.02 sec (CPU time = 0.90 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 38 of 56 * Calculating TIM+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3569.523
+  Estimated base frequencies = A:0.409926 C:0.175374 G:0.190174 T:0.224526
+  Estimated R-matrix:
+    -             1     2.7765956    0.47211899
+                 1-    0.47211899     2.5561088
+         2.7765956    0.47211899-             1
+        0.47211899     2.5561088             1-
+  Estimated value of proportion of invariable sites = 0.410448
+
+Time used to compute likelihoods = 1.23 sec (CPU time = 1.06 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 39 of 56 * Calculating TIM+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3552.703
+  Estimated base frequencies = A:0.416968 C:0.177880 G:0.183755 T:0.221397
+  Estimated R-matrix:
+    -             1     2.9883361    0.47503066
+                 1-    0.47503066     2.5734451
+         2.9883361    0.47503066-             1
+        0.47503066     2.5734451             1-
+  Estimated value of gamma shape parameter = 0.596252
+
+Time used to compute likelihoods = 4.88 sec (CPU time = 4.62 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 40 of 56 * Calculating TIM+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 4 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - c e
+     G b c - a
+     T c e a -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3551.389
+  Estimated base frequencies = A:0.418346 C:0.177242 G:0.182255 T:0.222157
+  Estimated R-matrix:
+    -             1     3.0019473    0.46948432
+                 1-    0.46948432     2.5642386
+         3.0019473    0.46948432-             1
+        0.46948432     2.5642386             1-
+  Estimated value of proportion of invariable sites = 0.237977
+  Estimated value of gamma shape parameter = 1.222600
+
+Time used to compute likelihoods = 5.29 sec (CPU time = 5.08 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 41 of 56 * Calculating TVMef **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3708.731
+  Estimated R-matrix:
+    -     3.3116272     6.4480328     1.4855806
+         3.3116272-     1.1715157     6.4480328
+         6.4480328     1.1715157-             1
+         1.4855806     6.4480328             1-
+
+Time used to compute likelihoods = 0.62 sec (CPU time = 0.57 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 42 of 56 * Calculating TVMef+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3619.631
+  Estimated R-matrix:
+    -     2.9322591     6.1206944     1.3543849
+         2.9322591-    0.99107901     6.1206944
+         6.1206944    0.99107901-             1
+         1.3543849     6.1206944             1-
+  Estimated value of proportion of invariable sites = 0.411205
+
+Time used to compute likelihoods = 0.72 sec (CPU time = 0.61 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 43 of 56 * Calculating TVMef+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3599.431
+  Estimated R-matrix:
+    -     3.2769964     6.6376735     1.5418667
+         3.2769964-    0.87671874     6.6376735
+         6.6376735    0.87671874-             1
+         1.5418667     6.6376735             1-
+  Estimated value of gamma shape parameter = 0.609854
+
+Time used to compute likelihoods = 2.21 sec (CPU time = 1.98 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 44 of 56 * Calculating TVMef+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to a submodel of the SYM+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3599.103
+  Estimated R-matrix:
+    -     3.2770827     6.6402404     1.5370522
+         3.2770827-    0.87874697     6.6402404
+         6.6402404    0.87874697-             1
+         1.5370522     6.6402404             1-
+  Estimated value of proportion of invariable sites = 0.144461
+  Estimated value of gamma shape parameter = 0.888023
+
+Time used to compute likelihoods = 4.19 sec (CPU time = 3.94 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 45 of 56 * Calculating TVM **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3650.924
+  Estimated base frequencies = A:0.383460 C:0.152386 G:0.216804 T:0.247349
+  Estimated R-matrix:
+    -     3.6196317      6.266284     1.1162417
+         3.6196317-     1.5047858      6.266284
+          6.266284     1.5047858-             1
+         1.1162417      6.266284             1-
+
+Time used to compute likelihoods = 0.82 sec (CPU time = 0.77 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 46 of 56 * Calculating TVM+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3558.984
+  Estimated base frequencies = A:0.400181 C:0.154322 G:0.202078 T:0.243419
+  Estimated R-matrix:
+    -     3.0388878     5.7805053    0.92551942
+         3.0388878-      1.381331     5.7805053
+         5.7805053      1.381331-             1
+        0.92551942     5.7805053             1-
+  Estimated value of proportion of invariable sites = 0.402533
+
+Time used to compute likelihoods = 1.37 sec (CPU time = 1.20 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 47 of 56 * Calculating TVM+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3543.809
+  Estimated base frequencies = A:0.404098 C:0.152001 G:0.199970 T:0.243931
+  Estimated R-matrix:
+    -      3.154133     5.9698322    0.89926064
+          3.154133-     1.4391937     5.9698322
+         5.9698322     1.4391937-             1
+        0.89926064     5.9698322             1-
+  Estimated value of gamma shape parameter = 0.628444
+
+Time used to compute likelihoods = 3.68 sec (CPU time = 3.35 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 48 of 56 * Calculating TVM+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 5 (restriction of 6ST GTR model)
+    Substitution classification:   A C G T
+     A - a b c
+     C a - d b
+     G b d - e
+     T c b e -
+    State frequencies estimated via ML
+    These settings correspond to a submodel of the GTR+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3542.395
+  Estimated base frequencies = A:0.406421 C:0.150776 G:0.198170 T:0.244633
+  Estimated R-matrix:
+    -     3.1458383     5.9664376    0.87619388
+         3.1458383-     1.4757016     5.9664376
+         5.9664376     1.4757016-             1
+        0.87619388     5.9664376             1-
+  Estimated value of proportion of invariable sites = 0.240535
+  Estimated value of gamma shape parameter = 1.331563
+
+Time used to compute likelihoods = 6.82 sec (CPU time = 6.59 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 49 of 56 * Calculating SYM **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the SYM model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3699.509
+  Estimated R-matrix:
+    -     3.3108806     7.6065985     1.5030059
+         3.3108806-     1.1570322     4.6526967
+         7.6065985     1.1570322-             1
+         1.5030059     4.6526967             1-
+
+Time used to compute likelihoods = 0.61 sec (CPU time = 0.57 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 50 of 56 * Calculating SYM+I **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the SYM+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3615.158
+  Estimated R-matrix:
+    -      3.035443     7.1139236     1.4039254
+          3.035443-     1.0215807      4.810572
+         7.1139236     1.0215807-             1
+         1.4039254      4.810572             1-
+  Estimated value of proportion of invariable sites = 0.402165
+
+Time used to compute likelihoods = 1.08 sec (CPU time = 0.98 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 51 of 56 * Calculating SYM+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the SYM+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3593.028
+  Estimated R-matrix:
+    -     3.5359163      8.326111     1.6579951
+         3.5359163-    0.90800304     4.9454719
+          8.326111    0.90800304-             1
+         1.6579951     4.9454719             1-
+  Estimated value of gamma shape parameter = 0.626146
+
+Time used to compute likelihoods = 2.38 sec (CPU time = 2.20 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 52 of 56 * Calculating SYM+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    Assumed state frequencies (set by user):
+      A=0.25000  C=0.25000  G=0.25000  T=0.25000
+    These settings correspond to the SYM+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3592.716
+  Estimated R-matrix:
+    -     3.5291971     8.3215874     1.6525682
+         3.5291971-    0.90974656     4.9423873
+         8.3215874    0.90974656-             1
+         1.6525682     4.9423873             1-
+  Estimated value of proportion of invariable sites = 0.129099
+  Estimated value of gamma shape parameter = 0.871605
+
+Time used to compute likelihoods = 3.89 sec (CPU time = 3.63 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 53 of 56 * Calculating GTR **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the GTR model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3650.025
+  Estimated base frequencies = A:0.377113 C:0.158167 G:0.209757 T:0.254963
+  Estimated R-matrix:
+    -     3.5554276     6.6524634     1.1064171
+         3.5554276-     1.4869418     5.5010414
+         6.6524634     1.4869418-             1
+         1.1064171     5.5010414             1-
+
+Time used to compute likelihoods = 1.13 sec (CPU time = 1.03 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 54 of 56 * Calculating GTR+IÊ**
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the GTR+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = equal
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3558.845
+  Estimated base frequencies = A:0.397505 C:0.156373 G:0.199333 T:0.246789
+  Estimated R-matrix:
+    -     3.0386778     5.9793045    0.92652283
+         3.0386778-     1.3875936     5.5009336
+         5.9793045     1.3875936-             1
+        0.92652283     5.5009336             1-
+  Estimated value of proportion of invariable sites = 0.401642
+
+Time used to compute likelihoods = 1.86 sec (CPU time = 1.74 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 55 of 56 * Calculating GTR+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the GTR+G model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = none
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3543.728
+  Estimated base frequencies = A:0.401986 C:0.154379 G:0.197459 T:0.246176
+  Estimated R-matrix:
+    -     3.0968776     6.1088707    0.89319445
+         3.0968776-     1.4226092     5.6515746
+         6.1088707     1.4226092-             1
+        0.89319445     5.6515746             1-
+  Estimated value of gamma shape parameter = 0.630354
+
+Time used to compute likelihoods = 4.14 sec (CPU time = 3.91 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+** Model 56 of 56 * Calculating GTR+I+G **
+
+Likelihood scores of tree(s) in memory:
+  Likelihood settings:
+    Number of substitution types = 6
+    Substitution rate-matrix parameters estimated via ML
+    State frequencies estimated via ML
+    These settings correspond to the GTR+G+I model
+    Among-site rate variation:
+      Assumed proportion of invariable sites  = estimated
+      Distribution of rates at variable sites = gamma (discrete approximation)
+        Shape parameter (alpha)   = estimated
+        Number of rate categories = 4
+        Representation of average rate for each category = mean
+    Number of distinct data patterns under this model = 245
+    Molecular clock not enforced
+    Starting branch lengths obtained using Rogers-Swofford approximation method
+    Branch-length optimization = one-dimensional Newton-Raphson with pass limit=20,
+                                 tolerance=1e-07
+    Multidimensional optimizer = Praxis (tol=0.0001)
+    Vector processing enabled
+    Conditional-likelihood rescaling threshold = 1e-20
+    Using 1 thread on 1 processor
+
+Tree number 1:
+  -Ln likelihood = 3542.308
+  Estimated base frequencies = A:0.404313 C:0.153057 G:0.195618 T:0.247012
+  Estimated R-matrix:
+    -      3.096187     6.1194083    0.87275028
+          3.096187-      1.463014     5.6605985
+         6.1194083      1.463014-             1
+        0.87275028     5.6605985             1-
+  Estimated value of proportion of invariable sites = 0.241431
+  Estimated value of gamma shape parameter = 1.342870
+
+Time used to compute likelihoods = 5.34 sec (CPU time = 5.11 sec)
+
+Tree scores (and parameter estimates) written to file:
+~/molevol/week6/modelselect/model.scores
+
+NOTE:The molecular clock hypothesis is not included in this PAUP block for reasons of
+computing time. This hypothesis may be tested once we have chosen one of the above
+models, simply calculating the log likelihood score of the chosen model with the
+molecular clock enforced and comparing it with the log likelihood previously obtained
+without enforcing the molecular clock. In this case, the molecular clock is the
+null hypothesis. The number of degrees of freedom is the number of OTUs - 2

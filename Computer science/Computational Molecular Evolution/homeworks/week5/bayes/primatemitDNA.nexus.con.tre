@@ -1,0 +1,30 @@
+#NEXUS
+
+[ID: 7165893304]
+begin taxa;
+	dimensions ntax=5;
+	taxlabels
+		Human
+		Chimpanzee
+		Gorilla
+		Orangutan
+		Gibbon
+		;
+end;
+begin trees;
+	translate
+		1	Human,
+		2	Chimpanzee,
+		3	Gorilla,
+		4	Orangutan,
+		5	Gibbon
+		;
+   [Note: This tree contains information on the topology, 
+          branch lengths (if present), and the probability
+          of the partition indicated by the branch.]
+   tree con_50_majrule = (5:3.696712926782906e-01,4:2.394214978228136e-01,((1:5.424952478325675e-02,2:7.037842127648873e-02)0.979:3.280460835051072e-02,3:6.731638936888919e-02)0.999:1.265507542372615e-01);
+
+   [Note: This tree contains information only on the topology
+          and branch lengths (median of the posterior probability density).]
+   tree con_50_majrule = (5:3.696712926782906e-01,4:2.394214978228136e-01,((1:5.424952478325675e-02,2:7.037842127648873e-02):3.280460835051072e-02,3:6.731638936888919e-02):1.265507542372615e-01);
+end;

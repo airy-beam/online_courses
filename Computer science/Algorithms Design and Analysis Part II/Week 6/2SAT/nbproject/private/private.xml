@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/ouwater/NetBeansProjects/2SAT/src/pkg2sat/Main.java</file>
+        <file>file:/home/ouwater/NetBeansProjects/2SAT/src/pkg2sat/Clause.java</file>
+        <file>file:/home/ouwater/NetBeansProjects/2SAT/src/pkg2sat/DirectedGraph.java</file>
+        <file>file:/home/ouwater/NetBeansProjects/2SAT/src/pkg2sat/Literal.java</file>
+        <file>file:/home/ouwater/NetBeansProjects/2SAT/src/pkg2sat/TwoSat.java</file>
+        <file>file:/home/ouwater/NetBeansProjects/2SAT/src/pkg2sat/Kosaraju.java</file>
+    </open-files>
+</project-private>

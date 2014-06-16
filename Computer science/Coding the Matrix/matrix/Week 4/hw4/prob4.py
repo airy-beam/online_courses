@@ -1,0 +1,22 @@
+from vec import Vec
+from vec import scalar_mul
+from GF2 import one
+v1 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{0: one, 1: one})
+v2 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{1: one, 2: one})
+v3 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{0: one, 3: one})
+v4 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{1: one, 4: one})
+v5 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{2: one, 4: one})
+v6 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{3: one, 4: one})
+v7 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{5: one, 7: one})
+v8 = Vec([0, 1, 2, 3, 4, 5, 6, 7],{6: one, 7: one})
+
+for x1 in (0, one):
+    for x2 in (0, one):
+        for x3 in (0, one):
+            for x4 in (0, one):
+                 for x5 in (0, one):
+                     for x6 in (0, one):
+                         for x7 in (0, one):
+                             for x8 in (0, one):
+                                 if (scalar_mul(v1,x1)+scalar_mul(v2,x2)+scalar_mul(v3,x3)+scalar_mul(v4,x4)+scalar_mul(v5,x5)+scalar_mul(v6,x6)+scalar_mul(v7,x7)+scalar_mul(v8,x8)) == Vec([0, 1, 2, 3, 4, 5, 6, 7],{1: one, 3: one}):
+                                     print(x1, ", ", x2, ", ", x3, ", ", x4, ", ", x5, ", ", x6, ", ", x7, ", ", x8)
