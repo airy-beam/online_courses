@@ -168,13 +168,13 @@ object Main extends App {
   // Some help printing the results: 
   // println("RANKED:") 
   // GoogleVsApple.trending foreach println 
-  val t1 = new Tweet("Iskander", "Tweet 1", 15) 
+  val t1 = new Tweet("airy", "Tweet 1", 15) 
   val t2 = new Tweet("E", "Tweet 2", 14) 
-  val t3 = new Tweet("Iskander", "Tweet 3", 16) 
-  val t4 = new Tweet("Iskander", "Tweet 4", 12) 
-  val t5 = new Tweet("Iskander", "Tweet 5", 11) 
-  val t6 = new Tweet("Iskander", "Tweet 6", 16) 
-  val t7 = new Tweet("Iskander", "Tweet 7", 1) 
+  val t3 = new Tweet("airy", "Tweet 3", 16) 
+  val t4 = new Tweet("airy", "Tweet 4", 12) 
+  val t5 = new Tweet("airy", "Tweet 5", 11) 
+  val t6 = new Tweet("airy", "Tweet 6", 16) 
+  val t7 = new Tweet("airy", "Tweet 7", 1) 
   
   val ts = new Empty 
   val ts1 = ts.incl(t1) 
@@ -183,7 +183,7 @@ object Main extends App {
   val ts4 = ts3.incl(t4) 
   val ts5 = ts4.incl(t5) 
   
-//  val ts_fil = ts5.filter(tweet => tweet.user == "Iskander") 
+//  val ts_fil = ts5.filter(tweet => tweet.user == "airy") 
   
 //  println(ts_fil.contains(t1)) 
 //  println(ts_fil.contains(t2)) 

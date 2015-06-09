@@ -13,7 +13,7 @@ object Main {
     )
     //println(weight(sampleTree))
     
-    //println(createCodeTree(string2Chars("Iskander Zharkenovvvvvv")))
+    //println(createCodeTree(string2Chars("airy beammm")))
     //val leafs_list = makeOrderedLeafList( times_list )
     //println(leafs_list)
     

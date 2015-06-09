@@ -178,14 +178,14 @@ object Anagrams {
 }
 
 object Main extends App { 
-  val str: String = "Iskander Zharkenov"
+  val str: String = "airy beam"
   println(Anagrams.wordOccurrences(str))
   
   val w_lower = str.toLowerCase
   val occs_test = w_lower.toList.groupBy( identity ).map( o => ( o._1, o._2.length ) ).toList.sorted
   println(occs_test)
   
-  val sent1 = List("Iskander","Zharkenov")
+  val sent1 = List("airy","beam")
   println(Anagrams.sentenceOccurrences(sent1) )
   println( Anagrams.wordAnagrams("lift") )
   
