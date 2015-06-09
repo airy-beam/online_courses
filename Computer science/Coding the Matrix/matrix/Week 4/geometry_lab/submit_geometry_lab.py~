@@ -163,11 +163,11 @@ def submit(parts_string, login, password):
 
 
 def login_prompt():
-    return input('Login email address: ')
+    return 'zharkenov@mail.ru'
 
 
 def password_prompt():
-    return input("One-time password from the assignment page (NOT your own account's password): ")
+    return 'ghrPe9DqGR'
 
 
 def parts_prompt():

@@ -162,7 +162,7 @@ def submit(parts_string, login, password):
 
 
 def login_prompt():
-    return "zharkenov@mail.ru"
+    return "???"
 
 
 def password_prompt():
